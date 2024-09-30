@@ -3,12 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pets</title>
+    <link rel="shortcut icon" href="./assets/img/huella rosa.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-css">
+        <div class="container-fluid">
+            <img class="logo" src="./assets/img/pata.png" alt="Huella de mascota">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link bg-colores" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link bg-colores" href="./pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bg-colores" href="#">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle bg-colores" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mascotas
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Gatos</a></li>
+                <li><a class="dropdown-item" href="#">Perros</a></li>
+                <li><a class="dropdown-item" href="#">Otros</a></li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
 
+</header>
+<main>
+    <div class="container-carousel">
+        <div class="carruseles" id="slider">
+            <section class="slider-section">
+                <img src="./assets/img/perro.jpg" alt="imagen de un perro">
+
+            </section>
+            <section class="slider-section">
+                <img src="./assets/img/gatito.jpg" alt="imagen de un gato">
+            </section>
+            <section class="slider-section">
+                <img src="./assets/img/conejo.jpg" alt="imagen de un conejo">
+
+            </section>
+            <section class="slider-section">
+                <img src="./assets/img/andrew-s-ouo1hbizWwo-unsplash.jpg" alt="imagen de un gato y un perro">
+            </section>
+
+        </div>
+        <div class="btn-left"><</div>
+        <div class="btn-right">></div>
+
+
+    </div>
+
+    <div>
+        <h1 class="titulo">Bienvenidos a suavecitos y peluditos</h1>
+    </div>
+    <section>
+        <article>
+            <p class="parrafo-inicio">Te invitamos a visitar nuestra pagina web, donde encontrarás animales que necesitan un hogar lleno de amor. Si estás buscando adoptar, este es el lugar perfecto  para conocer a tu futuro compañero peludo. ¡Haz la diferencia y dale una segunda oportunidad a quienes más lo necesitan!</p>
+            <a href="./pages/nosotros.html">
+                <button class="boton-principal">Conocé nuestra historia</button>
+            </a>
+        </article>
+    </section>
+    <section>
+        <div class="titulo-secundario">
+        <h2 class="titulo-secundario-p1">Claves importantes que buscamos</h2>
+        <img class="lampara" src="./assets/img/lampara.png" alt="lamparita">
+        </div>
+
+        <div class="contenedor-img">
+        <div class="item">
+            <div class="animacion-img">
+            <img class="imagen" src="./assets/img/perro con una familia.jpeg" alt="perro con una familia">
+            </div>
+            <h3>Familia</h3>
+        </div>
+        <div class="item">
+            <div class="animacion-img">
+            <img class="imagen" src="./assets/img/perro feliz.jpg" alt="perro jugando con una rama">
+            </div>
+            <h3>Amor</h3>
+        </div>
+        <div class="item">
+            <div class="animacion-img">
+            <img class="imagen"  src="./assets/img/perro en el veterinario.jpg" alt="perro en un veternario">
+            </div>
+            <h3>Cuidado</h3>
+        </div>
+    </div>
+    </section>
+
+    <div class="contenedor">
+        <div class="h2">
+        <h2>Preguntas frecuentes</h2>
+        <img src="./assets/img/huella rosa.png" alt="patitas de perro">
+    </div>
+        <div class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+            <label for="btn-acordeon1">
+                cuantas veces al dia le puedo dar de comer a mi mascota?
+            </label>
+            <div class="contenido-acordeon">
+                <p>Por lo general, un can come dos veces al día, una por la mañana y otra por la noche. Preferiblemente, dale a la misma hora, aunque esto depende de muchos factores, así que, además de esta guía de alimentación para perros, considera una consulta con tu veterinario para estar seguro.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor"></div>
+        <div class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+            <label for="btn-acordeon2">
+               Qué alimentos son toxicos para nuestras mascotas?
+            </label>
+            <div class="contenido-acordeon">
+                <p>Muchos dueños de mascotas saben que los perros y los gatos no deben comer chocolate. Tampoco deben consumir cebolla, ajo, uvas, pasas, masa cruda con levadura, alimentos con moho, café, bebidas energéticas con cafeína o bebidas alcohólicas”.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor"></div>
+        <div class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+            <label for="btn-acordeon3">
+            Qué vacunas son obligatorias para las mascotas?
+            </label>
+            <div class="contenido-acordeon">
+                <p>Las vacunas obligatorias para perros y gatos son las que protegen contra el moquillo canino, el parvovirus y la rabia.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor"></div>
+        <div class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+            <label for="btn-acordeon4">
+            Qué consejos tenes que tener en cuenta para adoptar a una mascota?
+            </label>
+            <div class="contenido-acordeon">
+                <p>Para que tu mascota se sienta comoda en tu hogar, primero es importante prepararle un lugar seguro e higienizado, darle su espacio y tiempo para que el mismo se pueda adaptar al lugar y a la nueva familia, a su ves es importante darle los cuidados necesarios para que se sienta comodo así como también mimarlo y darle cariño.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+
+</main>
+<section>
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: hsla(207, 79%, 11%, 0.831)">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: CTA -->
+        <section class="">
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3">¡Un hogar para ellos, amor para ti!</span>
+          </p>
+        </section>
+        <!-- Section: CTA -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: hsla(207, 79%, 11%, 0.831)">
+        © 2024 Copyright:
+        <a class="text-white" href="#">Malena Dino</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
     
     <script src="./javascript/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

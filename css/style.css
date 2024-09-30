@@ -1,0 +1,334 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+        font-family:'poppins' , sans-serif;
+
+        
+
+    }
+.container-carousel{
+        position: relative;
+        width: 100%;
+        height: 550px;
+        background-color: #e0e0e0;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+        overflow: hidden;
+    }
+.carruseles{
+        width: 400%;
+        height: 550px;
+        display: flex;
+
+
+}
+.slider-section{
+    width: calc(100% / 4);
+
+}
+.slider-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   /* filter: brightness(0.5);*/
+
+}
+.btn-left,
+.btn-right{
+    display: flex;
+    position: absolute;
+    top:50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff81;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+.btn-left:hover,
+.btn-right:hover{
+    background-color: #333333d4;
+    color: #fff;
+}
+.btn-left{
+left: 10px;
+}
+.btn-right{
+    right: 10px;
+}
+
+
+.bg-css{
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    background-color: hsla(207, 46%, 41%, 0.831);
+
+}
+.bg-colores{
+    color:hsl(0, 0%, 100%);
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.titulo{
+    color: hsla(207, 46%, 41%, 0.831);
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.parrafo-inicio{
+    
+    display: center;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 40px;
+    
+}
+section article{
+    text-align: center;
+}
+.boton-principal:hover{
+        background-color: rgb(204, 127, 240);
+        color: #fff;
+        border:solid rgb(204, 127, 240);
+    }
+
+.boton-principal{
+    background-color: hsla(207, 46%, 41%, 0.831);
+    color:#fff;
+    padding: 3px 3px;
+    border: solid hsla(207, 46%, 41%, 0.831);
+    margin: 27px;
+    margin-bottom: 40px;
+    border-radius: 7px;
+    font-weight: 200;
+    font-size: 13px;
+
+
+}
+.titulo-secundario-p1{
+    font-size: 27px;
+    color: hsla(207, 46%, 41%, 0.831);
+    
+}
+.titulo-secundario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px;
+
+}
+.lampara{
+    width: 50px;
+    margin: 10px;
+    margin-top: -10px;
+}
+.contenedor-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    justify-items:center ;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+
+}
+.item{
+    text-align: center;
+    
+}
+.imagen:hover{
+    transform: scale(1.1);
+            transition: 1s;
+
+}
+.imagen{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+
+    
+}
+.item h3{
+    color:#fff;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: hsla(207, 46%, 41%, 0.831);
+    border: 2px solid hsla(207, 46%, 41%, 0.831);
+    border-radius: 30px;
+    margin-bottom: 200px;
+
+}
+.animacion-img{
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    transition: 1s;
+
+}
+.bg{
+    background-color: hsla(207, 46%, 41%, 0.831);
+}
+
+.contenedor-acordeon{
+    width: 50%;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 80px;
+}
+.h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsla(207, 46%, 41%, 0.831);
+    margin-top: -50px;
+    margin-bottom: 30px;
+
+}
+.h2 img{
+    width: 45px;
+    margin: 10px;
+}
+.acordeon{
+    background-color: #fff;
+}
+.acordeon label{
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    background-color: hsla(207, 46%, 41%, 0.831);
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+}
+.acordeon label:hover{
+    background-color: rgb(204, 127, 240);
+}
+.acordeon .contenido-acordeon{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: 200px;
+    padding: 15px 0px;
+}
+.btn-acordeon{
+
+    display: none;
+}
+.nosotros{
+    display: flex;
+    justify-content: center;
+    background-position:center;
+    background-repeat:no-repeat ;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.nosotros-h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color:hsla(207, 46%, 41%, 0.831) ;
+    font-weight: 600;
+}
+.parrafo-nosotros{
+    display: center;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.nosotros-h2{
+    color:hsla(207, 46%, 41%, 0.831) ;
+    margin-bottom: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nosotros-h2 img{
+    width: 45px;
+    margin: 10px;
+}
+.lista{
+    text-align: center;
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid hsla(207, 46%, 41%, 0.831);
+    border-radius: 10px;
+}
+.lista ol{
+    list-style: disc;
+    padding: 0;
+    margin: 0;
+}
+.lista li{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.grid-container{
+    
+    display: grid;
+    justify-content: center;
+    grid-template-columns:  repeat(3, 1fr);
+    column-gap: 5px;
+    padding: 20px;
+}
+.animales{
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+.animales img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 10px hsla(207, 46%, 41%, 0.831) ;
+}
+.animales h3{
+    color:#fff;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: hsla(207, 46%, 41%, 0.831);
+    border: 2px solid hsla(207, 46%, 41%, 0.831);
+    border-radius: 30px;
+}
+.animales-h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsla(207, 46%, 41%, 0.831);
+    text-decoration: underline hsla(207, 46%, 41%, 0.831);
+
+}
