@@ -332,3 +332,147 @@ section article{
     text-decoration: underline hsla(207, 46%, 41%, 0.831);
 
 }
+
+.principal-gatos{
+
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),  url("../assets/img/wes-hicks-qGheSe6xIVY-unsplash.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.titulo-gatos{
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+    transform: translate(-4%, -4%);
+    font-size: 80px;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background-image: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -300px 0;
+    animation: backcolor 3s linear infinite alternate;
+
+}
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+}
+    
+
+.inicio-gatos{
+    color:hsla(207, 46%, 41%, 0.831);
+    font-weight: 300 ;
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-bottom: 50px;
+    font-size: 22px;
+
+}
+
+.grid-container-gatos{
+    grid-template-columns:  repeat(4, 1fr);
+    display: grid;
+    justify-content: center;
+    column-gap: 5px;
+    padding: 35px;
+}
+.mascotas-gatos{
+
+    border: 2px solid hsla(207, 46%, 41%, 0.831);
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    
+}
+.mascotas-gatos:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+.mascotas-gatos img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 10px hsla(207, 46%, 41%, 0.831) ;
+
+        
+}
+
+
+.boton-segundo:hover{
+    background-color: rgb(204, 127, 240);
+    color: #fff;
+    border:solid rgb(204, 127, 240);
+}
+
+.boton-segundo{
+
+background-color: hsla(207, 46%, 41%, 0.831);
+color:#fff;
+padding: 3px 3px;
+border: solid hsla(207, 46%, 41%, 0.831);
+margin: 27px;
+margin-bottom: 40px;
+border-radius: 7px;
+font-weight: 200;
+font-size: 17px;
+
+
+}
+.contenedor-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-mascotas{
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+
+
+}
+
+.info-mascotas li {
+    margin: 5px 0;
+}
+
+
+.principal-perros{
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),  url("../assets/img/jamie-street-sfq5WaN7lL4-unsplash.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal-novedades{
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),  url("../assets/img/theresa-brand-hWuVJCcrjhs-unsplash.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
