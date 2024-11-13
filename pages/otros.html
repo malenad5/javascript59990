@@ -42,13 +42,16 @@
                 </ul>
                 </div>
             </div>
+            <div class="cart-icon" onclick="mostrarCarrito()">
+                🏠 <span id="cart-count">0</span>
+            </div>
         </nav>
     
     </header>
 
     <main>
         <div class="principal-novedades">
-            <h1 class="titulo-gatos">Novedades</h1>
+            <h1 class="titulo-novedades">Novedades</h1>
             </div>
 
 
@@ -57,151 +60,18 @@
                 <div class="grid-container-mascotas">
         
                     <section id="grid-container-mascotas"></section>
-                    <section id="carrito">
-                        <h2 class="mi-titulo-carrito">Carrito de Compras</h2>
-                        <ul id="carrito-items"></ul>
-                    </section>
-                
-                
-                    <!--
-                    <div class="mascotas-gatos">
-                    <img src="../assets/img/462149691_8671762499553974_1529807625001570255_n.jpg" alt="hamster">
-                    
-                        <ul class="info-mascotas">
-                            <li><strong>Nombre:</strong> Lupita</li>
-                            <li><strong>Género:</strong> Hembra</li>
-                            <li><strong>personalidad:</strong> Es muy tranquila y le gusta dormir mucho.</li>
-                            <li><strong>Ubicación:</strong> CABA</li>
-                        </ul>
-                        <div class="contenedor-boton">
-                    <a href="../pages/contacto.html">
-                        <button class="boton-segundo">Adoptar</button>
-                    </a>
-                </div>
-                    
-
-                </div>
-
-                    
-                    <div class="mascotas-gatos">
-                        <img src="../assets/img/462300457_122182251590199009_489431254452299026_n.jpg" alt="hamster">
-                        
-                        <ul class="info-mascotas">
-                            <li><strong>Nombre:</strong> Paris</li>
-                            <li><strong>Género:</strong> Hembra</li>
-                            <li><strong>personalidad:</strong> Tiene 3 meses, es pequeña, mimosa y súper tranquila.</li>
-                            <li><strong>Ubicación:</strong> CABA</li>
-                        </ul>
-
-                        <div class="contenedor-boton">
-                        <a href="../pages/contacto.html">
-                            <button class="boton-segundo">Adoptar</button>
-                        </a>
-                    </div>
-                        
-                    </div>
-
-                        <div class="mascotas-gatos">
-                            <img src="../assets/img/462532828_1047487787170829_5437302686072033013_n.jpg" alt="hamster">
-                            
-                        <ul class="info-mascotas">
-                            <li><strong>Nombre:</strong> Lupe</li>
-                            <li><strong>Género:</strong> Hembra</li>
-                            <li><strong>personalidad:</strong> Tiene 7 meses, es muy tranquila y cariñosa.</li>
-                            <li><strong>Ubicación:</strong> CABA</li>
-                        </ul>
-
-                            <div class="contenedor-boton">
-                            <a href="../pages/contacto.html">
-                                <button class="boton-segundo">Adoptar</button>
-                            </a>
-                        </div>
-                        </div>
-                        
-                            <div class="mascotas-gatos">
-                            <img src="../assets/img/459787828_1078998613737363_7434420118090677893_n.jpg" alt="conejo">
-                            
-                        <ul class="info-mascotas">
-                            <li><strong>Nombre:</strong> Pia</li>
-                            <li><strong>Género:</strong> Hembra</li>
-                            <li><strong>personalidad:</strong> Tiene 6 meses, es muy tranquila y mimosa.</li>
-                            <li><strong>Ubicación:</strong> CABA</li>
-                        </ul>
-
-                            <div class="contenedor-boton">
-                            <a href="../pages/contacto.html">
-                                <button class="boton-segundo">Adoptar</button>
-                            </a>
-                        </div>
-                        </div>
-
-                            <div class="mascotas-gatos">
-                                <img src="../assets/img/461053954_526553503650665_5053553327037018933_n.jpg" alt="conejo">
-                                
-                        <ul class="info-mascotas">
-                            <li><strong>Nombre:</strong> Copito</li>
-                            <li><strong>Género:</strong> Macho</li>
-                            <li><strong>personalidad:</strong> Es muy cariñoso y busca una nueva familia, tiene 2 meses.</li>
-                            <li><strong>Ubicación:</strong> CABA</li>
-                        </ul>
-                                <div class="contenedor-boton">
-                                <a href="../pages/contacto.html">
-                                    <button class="boton-segundo">Adoptar</button>
-                                </a>
-                            </div>
-                            </div>
-
-                            <div class="mascotas-gatos">
-                                    <img src="../assets/img/459462258_9117777161571271_5901823526531123204_n.jpg" alt="conejo">
-                                    
-                        <ul class="info-mascotas">
-                            <li><strong>Nombre:</strong> Lima</li>
-                            <li><strong>Género:</strong> Hembra</li>
-                            <li><strong>personalidad:</strong> Tiene tan solo 2 meses, es muy mimosa y busca una nueva familia.</li>
-                            <li><strong>Ubicación:</strong> CABA</li>
-                        </ul>
-
-                                    <div class="contenedor-boton">
-                                    <a href="../pages/contacto.html">
-                                        <button class="boton-segundo">Adoptar</button>
-                                    </a>
-                                </div>
-                                </div>
-
-                            <div class="mascotas-gatos">
-                                <img src="../assets/img/460185344_9117778741571113_3947304850470309722_n.jpg" alt="conejo">
-                                
-                        <ul class="info-mascotas">
-                            <li><strong>Nombre:</strong> Coco</li>
-                            <li><strong>Género:</strong> Macho</li>
-                            <li><strong>personalidad:</strong> Tiene 2 meses y busca una nueva familia, le gusta jugar mucho y es muy curioso.</li>
-                            <li><strong>Ubicación:</strong> CABA</li>
-                        </ul>
-                                <div class="contenedor-boton">
-                                <a href="../pages/contacto.html">
-                                    <button class="boton-segundo">Adoptar</button>
-                                </a>
-                            </div>
-                            </div>
-
-                            <div class="mascotas-gatos">
-                                <img src="../assets/img/461966561_1824750705030320_6472229329092947305_n.jpg" alt="tortuga">
-                                
-                        <ul class="info-mascotas">
-                            <li><strong>Nombre:</strong> Luna</li>
-                            <li><strong>Género:</strong> Hembra</li>
-                            <li><strong>personalidad:</strong> Es terrestre y acuática y le gusta mucho la naturaleza, es muy tranquila.</li>
-                            <li><strong>Ubicación:</strong> CABA</li>
-                        </ul>
-
-                                <div class="contenedor-boton">
-                                <a href="../pages/contacto.html">
-                                    <button class="boton-segundo">Adoptar</button>
-                                </a>
-                            </div>
-                            </div>
-
-                            -->
+                <!-- Modal del carrito -->
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+    <h2 class="titulo-carrito"> Adopciones</h2>
+    <ul id="cart-items"></ul>
+    <p>Total de adopciones: <span id="cart-total">0</span></p>
+    <a class="boton-adoptar" href="./contacto.html">
+    <button>Adoptar</button>
+    ></a>
+    <button onclick="cerrarCarrito()">Cerrar</button>
+    </div>
+</div>
     </section>
 
     </main>
@@ -210,24 +80,24 @@
     <footer class="text-center text-white" style="background-color: hsla(207, 79%, 11%, 0.831)">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
-          <!-- Section: CTA -->
-          <section class="">
+        <!-- Section: CTA -->
+        <section class="">
             <p class="d-flex justify-content-center align-items-center">
-              <span class="me-3">¡Un hogar para ellos, amor para ti!</span>
+            <span class="me-3">¡Un hogar para ellos, amor para ti!</span>
             </p>
-          </section>
-          <!-- Section: CTA -->
+        </section>
+        <!-- Section: CTA -->
         </div>
         <!-- Grid container -->
     
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: hsla(207, 79%, 11%, 0.831)">
-          © 2024 Copyright:
-          <a class="text-white" href="#">Malena Dino</a>
+        © 2024 Copyright:
+        <a class="text-white" href="#">Malena Dino</a>
         </div>
         <!-- Copyright -->
-      </footer>
-      <!-- Footer -->
+    </footer>
+    <!-- Footer -->
     
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
